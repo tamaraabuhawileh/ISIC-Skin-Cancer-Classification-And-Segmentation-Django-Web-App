@@ -1,0 +1,214 @@
+{% load static %}
+{% block content%}
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    --h: 212deg;
+    --l: 43%;
+    --brandColor: hsl(var(--h), 71%, var(--l));
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+ 
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+ 
+ol {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
+}
+ 
+li {
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 71%, var(--l));
+    --c2: hsl(var(--h), 71%, var(--l2));
+   
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: white;
+}
+ 
+li::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+ 
+h3 {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+    color: rgb(70 70 70);
+}
+ 
+h3::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    content: counter(list);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--c1);
+    color: white;
+}
+ 
+@media (min-width: 40em) {
+    li {
+        margin: 3rem auto;
+        padding: 3rem 2rem 2rem;
+    }
+   
+    h3 {
+        font-size: 2.25rem;
+        margin: 0 0 2rem;
+    }
+   
+    h3::before {
+        margin-right: 1.5rem;
+    }
+}
+.home-button {
+    position: absolute;
+    bottom: -150px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 999; /* Set a high z-index to ensure it appears on top */
+}
+ 
+  .home-button a {
+    text-decoration: none;
+    color:white; /* Use the brand color or adjust the color as needed */
+    font-weight:400;
+font-size: 16px;
+font-family: Garamond;
+  }
+  body{
+  font-family: 'Lato', sans-serif;
+}
+ 
+.wrapper{
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.link_wrapper{
+  position: relative;
+}
+ 
+a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #511f92;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #c898d3;
+  transition: all .35s;
+}
+ 
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+ 
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #c898d3;
+  transition: all .35s;
+}
+ 
+a:hover{
+  width: 200px;
+  border: 3px solid #c898d3;
+  background: transparent;
+  color: #c898d3;
+}
+ 
+a:hover + .icon{
+  border: 3px solid #c898d3;
+  right: -25%;
+}
+  </style>
+<body>
+  <div>
+    
+<ol style="--length: 5" role="list">
+	<li style="--i: 5">
+		<h3>{{classification1}}</h3>
+		<p>{{Prob1}} %</p>
+	</li>
+	<li style="--i: 2">
+		<h3>{{classification2}}</h3>
+		<p>{{Prob2}} %</p>
+	</li>
+	<li style="--i: 1">
+		<h3>{{classification3}}</h3>
+		<p>{{Prob3}} %</p>
+	</li>
+</ol>
+  </main>
+</div>
+<div class="home-button">
+       
+ 
+    <div class="wrapper">
+        <div class="link_wrapper">
+          <a href="/classification">Upload agian</a>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+            </svg>
+          </div>
+        </div>
+       
+      </div>
+  </div>
+</body>
+{% endblock content%}

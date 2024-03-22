@@ -1,0 +1,200 @@
+/* CSS code for header section */
+/* start navigation */ 
+/* Add a black background color to the top navigation */
+
+
+.header_area {
+    height: 100px;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 20px;
+
+}
+
+
+.header_area .main-menu .navbar{
+    padding: 0rem 5rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+    float: left;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */ 
+/*
+.container {
+     max-width: 1000px;
+    padding-left: 800px;
+    display: flex;
+    text-align: right;
+ 
+}
+
+h1 {
+    font-size: 16px;
+    font-family: Myanmar Text;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+h1.title {
+    font-size: 30px;
+    font-family: Myanmar Text;
+    margin: 0;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 36px;
+    font-family: Myanmar Text;
+    margin-top: 10px;
+    padding-top: 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Myanmar Text;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #292929;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+header .header {
+    background-color: #fff;
+    height: 45px;
+}
+
+header a img {
+    width: 134px;
+    margin-top: 4px;
+}
+
+.login-page {
+    width: 400px;
+    
+    margin: auto;
+}
+
+.login-page .form .login {
+    margin-top: -31px;
+    margin-bottom: 26px;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #618685;
+    background-image: linear-gradient(45deg, #328f8a, #618685);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #618685;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg, #328f8a, #618685);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*/

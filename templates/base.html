@@ -1,0 +1,11 @@
+{% load static %}
+<link rel='stylesheet' href="{% static 'css/basestyle.css' %}">
+<!--Bootsrab CSS-->
+<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}">
+<!--font awesome icons-->
+<link rel='stylesheet' href="{% static 'css/all.min.css' %}">
+{% include 'parts/header.html'%}
+
+{% block content%}{% endblock content%}
+
+{% include 'parts/footer.html'%}

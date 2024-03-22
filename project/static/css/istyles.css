@@ -1,0 +1,106 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+.body{
+    background-color: whitesmoke;
+}
+
+/* Banner Area */ 
+.d-flex{
+    padding-left: 15%;
+    padding-top: 30px;
+    height: 300px;
+    width: 500px;
+}
+.site-main .site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+    padding:10px 10px;
+}
+.site-main .site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+}
+.site-main .site-title {
+    padding-top: 8;
+}
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+    
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 500px;
+    width: 18vw;
+    background: #511F92;
+    margin-left: 5%;
+   
+    
+    
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+   
+}
+
+
+.site-main .site-banner .banner-image > img{
+    padding: 5rem 0;
+    width: 90rem;
+}
+
+
+
+
+/* End Banner Area */ 
+
+
+/* Services Area */
+#no{
+    text-decoration: none;
+}
+    
+
+.site-main .services-area {
+    padding-left: 100px;
+
+}
+ 
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+    text-align: center;
+    text-decoration: none;
+}
+ 
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+    color: #511F92;
+}
+ 
+
+.site-main > .services-area .services {
+    background: rgba(249, 246, 255, 0.973);
+    padding: 8rem 0;
+    width: 30rem;
+ 
+    margin: 5rem .5rem;
+    transition: box-shadow 0.05s ease;
+    text-decoration: none;
+}
+ 
+.site-main > .services-area .services:hover {
+    box-shadow: var(--box-shadow);
+    
+    
+}
+
+/* End Services Area */
+

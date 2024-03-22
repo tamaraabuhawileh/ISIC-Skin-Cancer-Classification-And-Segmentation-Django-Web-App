@@ -1,0 +1,80 @@
+{% load static %}
+{% block content%}
+
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <style>
+
+    body {
+  font-family: 'Times New Roman', Times, serif; 
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #511f92;
+  color: white;
+  padding: 15px;
+  height: 100px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+p {
+  
+  font-size: 25px;
+  line-height: 1.6;
+   text-align: justify; 
+}
+h1{
+  font-size: 50px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (iframe video) */
+  margin-top: 10px;
+  
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About</h1>
+  </header>
+  <main>
+    <section class="about-section">
+      <p>This platform provides machine learning techniques to classify skin lesions and
+         melanoma segmentation, providing users with valuable insights into the nature of
+          the detected lesions and aiding healthcare professionals in early diagnosis and 
+          treatment planning. By combining computer vision and medical expertise, this website
+           contributes significantly to the early detection of skin cancers, 
+        ultimately enhancing patient outcomes and reducing the burden on healthcare systems.</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="{% static 'images/about.mp4' %}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+
+
+{% endblock content%}

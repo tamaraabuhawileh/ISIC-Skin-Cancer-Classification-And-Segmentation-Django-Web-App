@@ -1,0 +1,106 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block content%}
+<!--CSS-->
+<link rel='stylesheet' href="{% static 'css/istyles.css' %}">
+<!--Bootsrab CSS-->
+<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}">
+<!--font awesome icons-->
+<link rel='stylesheet' href="{% static 'css/all.min.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Detection</title>
+</head>
+
+<body>
+        
+    <!--  ======================= Start Main Area ================================  -->
+    <main class="site-main">
+    <!-- ======================= Start Banner Area ======================= -->
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text"></h3>
+                    <h1 class="title-text text-uppercase">Welcome</h1>
+                    <br>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <a href= #Services><button type="button" class="btn button primary-button mr-20 text-uppercase">Get Started</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div style:"width=30px ;height=70px" class="col-lg-6 col-md-12 banner-image">
+                    <img  src="{% static 'images/skin cancer main image.jpg' %}" alt="banner-img" class="img-fluid" >
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ======================= End Banner Area ======================= -->
+
+
+
+  
+
+      
+
+        <!--  ====================== Start Services Area =============================  -->
+
+        <section class="services-area" id="Services">
+            <div class="container">
+            
+                <div class="container services-list" >
+                    <div  class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <a id='no' href="{% url 'segmentation' %}" >
+                            <div class="services">
+                                
+                                <div class="sevices-img text-center py-1">
+                                    <img src="{% static 'images/segmentation_icon0.png' %}" alt="Services-2" height="100px" width="100px">
+                                </div>
+                                <div class="card-body text-center">
+                                   <br><br>
+                                 <h5 class="card-title text-uppercase font-roboto" style="color:#511F92">Melanoma Segmentation</h5>
+                                
+                                </div>
+                               
+                            </div>
+                            </a>
+                        </div>
+                         
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a id='no' href="{% url 'classification' %}">
+                            <div class="services">
+                                <div class="sevices-img text-center py-1">
+                                    <img src="{% static 'images/classification_icon.png' %}" alt="Services-3" height="100px" width="100px">
+                                </div>
+                                <div class="card-body text-center">
+                                    <br><br>
+                                    <h5 class="card-title text-uppercase font-roboto" style="color:#511F92">Classification</h5>
+                                    
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ====================== End Services Area =============================  -->
+
+    </main>
+    <!--  ======================= End Main Area ================================ -->
+    <!--Bootsrab JQuery-->
+    <script src= "{% static 'js/jquery.3.7.1.js' %}"></script>
+    <!--Bootsrab JS-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+</body>
+</html>
+{% endblock content%}
