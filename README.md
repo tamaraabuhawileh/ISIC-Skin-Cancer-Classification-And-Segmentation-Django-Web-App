@@ -16,6 +16,6 @@ This repository hosts the code for a Django-based web application designed for s
 💡 **Future Enhancements:**
 - Continued model refinement and improvement for enhanced accuracy.
 - Integration of additional features based on user feedback and emerging research findings.
-- Perform object detection techniques on the ISIC dataset.
+- Perform object detection techniques on the ISIC dataset. (follow for more)
 
 🌟 **Contributions:** Contributions and feedback from the community are highly valued and encouraged!
