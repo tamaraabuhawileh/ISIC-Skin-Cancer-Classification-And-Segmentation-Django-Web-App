@@ -1,10 +1,13 @@
-🔬 ISIC Skin Cancer Classification and Segmentation Django Web App 🔬
+#🔬 ISIC Skin Cancer Classification and Segmentation Django Web App 🔬
 
-This repository hosts the code for a Django-based web application designed for skin cancer analysis using the ISIC (International Skin Imaging Collaboration) dataset. The application incorporates machine learning models for both skin cancer classification and custom image segmentation, enabling users to submit skin photos for comprehensive analysis.
-Dataset Source:
-Semantic Segmantion :
+This repository hosts the code for a Django-based web application designed for skin cancer analysis using the ISIC (International Skin Imaging Collaboration) dataset.
+The application incorporates machine learning models for both skin cancer classification and custom image segmentation, 
+enabling users to submit skin photos for comprehensive analysis.
+
+#Dataset Source:
+##Semantic Segmantion :
 https://challenge.isic-archive.com/data/#2018
-Classification:
+##Classification:
 https://challenge.isic-archive.com/data/#2019
 
 #🚀 Key Features:
