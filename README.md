@@ -8,8 +8,8 @@ This repository hosts the code for a Django-based web application designed for s
 
 🚀 **Key Features:**
 - **User Authentication:** Secure registration and login functionality to protect user data.
-- **Photo Submission:** Intuitive interface for uploading skin photos for analysis.
-- **Classification Model:** Accurate identification of various skin cancer diseases.
+- **Photo Submission:** Intuitive interface for uploading skin photos for analysis.(UNET Architecture)
+- **Classification Model:** Accurate identification of various skin cancer diseases(Xception Base Model)
 - **Custom Segmentation:** Precise segmentation of melanoma regions within uploaded photos.
 - **In-depth Analysis:** Detailed analysis reports providing insights into detected conditions.
 
